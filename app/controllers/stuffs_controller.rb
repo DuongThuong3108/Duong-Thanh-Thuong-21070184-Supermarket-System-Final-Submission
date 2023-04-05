@@ -65,6 +65,6 @@ class StuffsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def stuff_params
-      params.require(:stuff).permit(:name, :expiry, :manufactured)
+      params.require(:stuff).permit(:name, :manufactured, :expiry, :genre)
     end
 end

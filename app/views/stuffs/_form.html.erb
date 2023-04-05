@@ -16,12 +16,16 @@
           <%= form.text_field :name, class: input_class %>
       </div>
   <div class="mb-6">
+        <%= form.label :manufactured, class: label_class %>
+          <%= form.date_field :manufactured, class: input_class %>
+      </div>
+  <div class="mb-6">
         <%= form.label :expiry, class: label_class %>
           <%= form.date_field :expiry, class: input_class %>
       </div>
   <div class="mb-6">
-        <%= form.label :manufactured, class: label_class %>
-          <%= form.date_field :manufactured, class: input_class %>
+        <%= form.label :genre, class: label_class %>
+          <%= form.select:genre_id, options_from_collection_for_select(Genre.all, 'id', 'name', selected = stuff.genre_id), class:label_class %>
       </div>
 
 <%= form.submit class: button_class(theme: 'primary') %>

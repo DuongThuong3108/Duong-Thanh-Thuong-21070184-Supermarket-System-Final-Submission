@@ -2,10 +2,12 @@
 
 one:
   name: MyString
-  expiry: 2023-04-04
-  manufactured: 2023-04-04
+  manufactured: 2023-04-05
+  expiry: 2023-04-05
+  genre: MyString
 
 two:
   name: MyString
-  expiry: 2023-04-04
-  manufactured: 2023-04-04
+  manufactured: 2023-04-05
+  expiry: 2023-04-05
+  genre: MyString
