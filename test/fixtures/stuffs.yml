@@ -1,13 +1,13 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  name: MyString
-  manufactured: 2023-04-05
-  expiry: 2023-04-05
+  title: MyString
+  manufactured: 2023-04-11
+  expiry: 2023-04-11
   genre: MyString
 
 two:
-  name: MyString
-  manufactured: 2023-04-05
-  expiry: 2023-04-05
+  title: MyString
+  manufactured: 2023-04-11
+  expiry: 2023-04-11
   genre: MyString

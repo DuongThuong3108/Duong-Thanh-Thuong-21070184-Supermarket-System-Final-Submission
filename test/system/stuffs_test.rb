@@ -17,7 +17,7 @@ class StuffsTest < ApplicationSystemTestCase
     fill_in "Expiry", with: @stuff.expiry
     fill_in "Genre", with: @stuff.genre
     fill_in "Manufactured", with: @stuff.manufactured
-    fill_in "Name", with: @stuff.name
+    fill_in "Title", with: @stuff.title
     click_on "Create Stuff"
 
     assert_text "Stuff was successfully created"
@@ -31,7 +31,7 @@ class StuffsTest < ApplicationSystemTestCase
     fill_in "Expiry", with: @stuff.expiry
     fill_in "Genre", with: @stuff.genre
     fill_in "Manufactured", with: @stuff.manufactured
-    fill_in "Name", with: @stuff.name
+    fill_in "Title", with: @stuff.title
     click_on "Update Stuff"
 
     assert_text "Stuff was successfully updated"

@@ -14,7 +14,8 @@ class GenresTest < ApplicationSystemTestCase
     visit genres_url
     click_on "New genre"
 
-    fill_in "Title", with: @genre.title
+    fill_in "Description", with: @genre.description
+    fill_in "Name", with: @genre.name
     click_on "Create Genre"
 
     assert_text "Genre was successfully created"
@@ -25,7 +26,8 @@ class GenresTest < ApplicationSystemTestCase
     visit genre_url(@genre)
     click_on "Edit this genre", match: :first
 
-    fill_in "Title", with: @genre.title
+    fill_in "Description", with: @genre.description
+    fill_in "Name", with: @genre.name
     click_on "Update Genre"
 
     assert_text "Genre was successfully updated"
