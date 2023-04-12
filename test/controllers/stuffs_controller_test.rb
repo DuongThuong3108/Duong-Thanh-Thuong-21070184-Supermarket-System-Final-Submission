@@ -17,7 +17,7 @@ class StuffsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create stuff" do
     assert_difference("Stuff.count") do
-      post stuffs_url, params: { stuff: { expiry: @stuff.expiry, genre: @stuff.genre, manufactured: @stuff.manufactured, title: @stuff.title } }
+      post stuffs_url, params: { stuff: { expiry: @stuff.expiry, genre_id: @stuff.genre_id, manufactured: @stuff.manufactured, title: @stuff.title } }
     end
 
     assert_redirected_to stuff_url(Stuff.last)
@@ -34,7 +34,7 @@ class StuffsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update stuff" do
-    patch stuff_url(@stuff), params: { stuff: { expiry: @stuff.expiry, genre: @stuff.genre, manufactured: @stuff.manufactured, title: @stuff.title } }
+    patch stuff_url(@stuff), params: { stuff: { expiry: @stuff.expiry, genre_id: @stuff.genre_id, manufactured: @stuff.manufactured, title: @stuff.title } }
     assert_redirected_to stuff_url(@stuff)
   end
 

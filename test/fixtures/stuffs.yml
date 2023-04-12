@@ -2,12 +2,12 @@
 
 one:
   title: MyString
-  manufactured: 2023-04-11
-  expiry: 2023-04-11
-  genre: MyString
+  manufactured: 2023-04-12
+  expiry: 2023-04-12
+  genre: one
 
 two:
   title: MyString
-  manufactured: 2023-04-11
-  expiry: 2023-04-11
-  genre: MyString
+  manufactured: 2023-04-12
+  expiry: 2023-04-12
+  genre: two

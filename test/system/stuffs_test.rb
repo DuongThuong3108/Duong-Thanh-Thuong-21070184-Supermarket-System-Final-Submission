@@ -15,7 +15,7 @@ class StuffsTest < ApplicationSystemTestCase
     click_on "New stuff"
 
     fill_in "Expiry", with: @stuff.expiry
-    fill_in "Genre", with: @stuff.genre
+    fill_in "Genre", with: @stuff.genre_id
     fill_in "Manufactured", with: @stuff.manufactured
     fill_in "Title", with: @stuff.title
     click_on "Create Stuff"
@@ -29,7 +29,7 @@ class StuffsTest < ApplicationSystemTestCase
     click_on "Edit this stuff", match: :first
 
     fill_in "Expiry", with: @stuff.expiry
-    fill_in "Genre", with: @stuff.genre
+    fill_in "Genre", with: @stuff.genre_id
     fill_in "Manufactured", with: @stuff.manufactured
     fill_in "Title", with: @stuff.title
     click_on "Update Stuff"

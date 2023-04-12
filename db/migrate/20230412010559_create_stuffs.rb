@@ -4,7 +4,7 @@ class CreateStuffs < ActiveRecord::Migration[7.0]
       t.string :title
       t.date :manufactured
       t.date :expiry
-      t.string :genre
+      t.references :genre, null: false, foreign_key: true
 
       t.timestamps
     end
